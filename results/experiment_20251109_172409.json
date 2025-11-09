@@ -1,0 +1,32 @@
+{
+    "experiment_name": "LetNet",
+    "hyperparameters": {
+        "batch_size": 32,
+        "epochs": 5,
+        "learning_rate": 0.01,
+        "optimizer": "SGD",
+        "seed": 10
+    },
+    "metrics": {
+        "epoch_1": {
+            "test_accuracy": 95.37,
+            "train_loss": 0.6803674697875977
+        },
+        "epoch_2": {
+            "test_accuracy": 97.43,
+            "train_loss": 0.12507568299770355
+        },
+        "epoch_3": {
+            "test_accuracy": 97.82,
+            "train_loss": 0.08775849640369415
+        },
+        "epoch_4": {
+            "test_accuracy": 98.04,
+            "train_loss": 0.06933414191007614
+        },
+        "epoch_5": {
+            "test_accuracy": 98.57000000000001,
+            "train_loss": 0.05885467678308487
+        }
+    }
+}
