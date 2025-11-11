@@ -1,8 +1,8 @@
 #pragma once 
 #include <torch/torch.h>
 // LeNet architecture 
-struct LeNet : torch::nn::Module {
-    LeNet() {
+struct LeNetImpl : torch::nn::Module {
+    LeNetImpl() {
         // Convolutional layers
         conv1 = register_module("conv1", torch::nn::Conv2d(1, 6, 5));   // 1 input, 6 output, 5x5 kernel
         conv2 = register_module("conv2", torch::nn::Conv2d(6, 16, 5));  // 6 input, 16 output, 5x5 kernel
@@ -28,3 +28,4 @@ struct LeNet : torch::nn::Module {
     torch::nn::Conv2d conv1{nullptr}, conv2{nullptr};
     torch::nn::Linear fc1{nullptr}, fc2{nullptr}, fc3{nullptr};
 };
+TORCH_MODULE(LeNet);
