@@ -1,6 +1,9 @@
 # Created by https://www.toptal.com/developers/gitignore/api/python,linux,c++,vs,visualstudio,git,jupyternotebooks
 # Edit at https://www.toptal.com/developers/gitignore?templates=python,linux,c++,vs,visualstudio,git,jupyternotebooks
 
+models/
+results/ 
+
 ### C++ ###
 # Prerequisites
 *.d
